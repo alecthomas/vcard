@@ -209,7 +209,7 @@ func (vcard *VCard) ReadFrom(di *DirectoryInfoReader) {
 		case "X-ABADR":
 			// ignore*/
 		default:
-			log.Printf("Not read %s, %s: %s\n", contentLine.Group, contentLine.Name, contentLine.Value)
+			// log.Printf("Not read %s, %s: %s\n", contentLine.Group, contentLine.Name, contentLine.Value)
 		}
 		contentLine = di.ReadContentLine()
 	}
